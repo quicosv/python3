@@ -43,4 +43,8 @@ Si no está instalado o si la versión instalada es la 2 hay que ir a la web ofi
 
 ## Curiosidad
 
-Estos apuntes no lo abarcarán todo acerca de Python. Además, puede ser necesario algún refuerzo para comprender los conceptos y ejercicios para practicar. Nada que una búsqueda in internet no resuelva.
+Debemos probar todos los códigos de ejemplo que se proporcionan. Hay que decir aquí que lo correcto es escribir el código en lugar de copiarlo y pegarlo, porque el hecho de tener que leerlo primero e ir escribiéndolo después nos facilitará la memorización.
+
+Además, una vez que ejecutemos el código en la terminal deberemos revisar en detalle la ejecución del mismo, viendo cómo se mprimen los mensajes que se generen en la pantalla o prestando atención a los errores que nos marque el intérprete de Python.
+
+Por último, una búsqueda en internet siempre proporcionará información mucho más detallada y actualizada sobre los temas explicados y los que no se traten aquí.
