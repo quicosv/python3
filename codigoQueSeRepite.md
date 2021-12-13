@@ -21,6 +21,26 @@ Lo que ocurrirá será que se creará una variable que se va a llamar elemento. 
 
 Una tabla de multiplicar consiste en conocer el resultado de multiplicar un determinado número por los números del 1 al 10. Por lo tanto, la lista con la que deberemos trabajar será la de los números del 1 al 10. Dentro del bucle (así es como se llama a la estructura repetitiva) sólo tendremos que imprimir el valor de multiplicar el número que ha proporcionado el usuario por el valor que tenga la variable elemento en ese instante. Este programa también nos servirá para comprobar que cuando formateamos el texto que imprimimos, no sólo podemos imprimir el contenido de una variable, sino también el resultado de una operación.
 
+Para crear la lista de números utilizaremos la función range, que puede ejecutarse de tres formas diferentes:
+
+```
+range(mayor)
+range(menor,mayor)
+range(menor,mayor,incremento)
+```
+
+En el primer caso la lista se iniciará en 0 y llegará hasta el número mayor sin incluirlo. Es decir, si pasamos el número 5 la lista sería: 0, 1, 2, 3, 4.
+
+En el segundo caso determinamos el número en el que se empieza (menor). La función creará la lista sin incluir al número mayor. Así, range(25,31) devolvería la siguiente lista: 25, 26, 27, 28, 29, 30.
+
+En el último caso se establece el incremento que habrá entre cada elemento de la lista y el siguiente. Si no se especifica, Python entenderá que este incremento es 1. Por ejemplo, range(2,7,2) devolvería la siguiente lista: 2, 4, 6.
+
+Por lo tanto, lo que debe quedar claro de esta función es lo siguiente:
+
+1. Si sólo pasamos un úmero, la lista empezará en 0, se incrementará de 1 en 1 y llegará hasta el número especificado menos 1.
+1. Si ponemos dos números la lista empezará en el primero, se irá incrementando de 1 en 1 y llegará hasta el segundo número menos 1.
+1. Si ponemos 3 números, empezará en el primero, se irá incrementando en lo especificado por el tercer número y llegará hasta el segundo menos 1.
+
 
 ## El código
 
