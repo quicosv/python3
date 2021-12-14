@@ -41,6 +41,8 @@ from módulo import *
 cosa
 ```
 
+De todas estas opciones, la primera es la más segura de utilizar, debido a que si un nombre de variable o función se repite en dos módulos diferentes, al obligarnos a especificar de qué módulo se debe obtener no habrá ningún problema durante la ejecución.
+
 
 ## Un ejemplo
 
@@ -51,4 +53,28 @@ from math import pi
 radio=float(input("Radio: "))
 longitud=2*pi*radio
 print("La longitud de la circunferencia es {}.".format(longitud))
+```
+
+
+## Crear mnemotécnicos
+
+Podemos asignar un nombre corto o comprensible que nos interese a una función ue esté contenida en un módulo. Esto facilitará la comprensión del código, porque se supone que entendemos mejor el nombre que le hemos asignado que el nombre original de la función.
+
+Supongamos que queremos calcular la raíz cuadrada de un número. Para esto deberíamos utilizar la función sqrt que se encuentra en el módulo math. Con lo que sabemos hasta ahora podríamos hacer un programa como el siguiente:
+
+```
+import math
+print("Voy a calcular la raíz cuadrada de 100.")
+resultado=math.sqrt(100)
+print(resultado)
+```
+
+Imaginemos ahora que se nos complica recordar el nombre de la función sqrt y que entendemos mucho mejor el nombre en nuestro diioma (raíz cuadrada). De la misma forma en la que asignamos una variable podríamos asignar un mnemotécnico a esa parte de código tan difícil y Python lo ejecutará sin problemas. El código quedaría así:
+
+```
+import math
+raizCuadrada=math.sqrt
+print("Voy a calcular la raíz cuadrada de 100.")
+resultado=raizCuadrada(100)
+print(resultado)
 ```
