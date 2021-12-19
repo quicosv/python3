@@ -54,8 +54,14 @@ Podemos borrar la primera aparición de un elemento con el método remove.
 frutas.remove("piña")
 ```
 
-Por último, si todos los elementos del mismo tipo, podemos ordenar la lista con el método sort:
+Por último, si todos los elementos son del mismo tipo, podemos ordenar la lista con el método sorted:
 
 ```
-frutas.sort()
+ordenAscendente=sorted(frutas)
+```
+
+La función devuelve una lista nueva con los elementos ordenados de forma ascendente. Si quisiéramosun orden descendente añadiríamos un parámetro:
+
+```
+ordenDescendente=sorted(frutas,reverse=True)
 ```
